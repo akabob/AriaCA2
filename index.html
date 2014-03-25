@@ -1,0 +1,138 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>skelJS Example</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600|Source+Code+Pro" rel="stylesheet" />
+		<!--[if lte IE 8]><script src="html5shiv.js" type="text/javascript"></script><![endif]-->
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/sk1.js"> </script>
+		<script src="skel.min.js"> </script>
+       
+  
+        </head>
+	<body>
+	
+        <div class="container">
+<!-- Give column value in word form (one, two..., twelve) -->
+
+            <div id="header" class="row flush">
+					<div class="0u">
+						<h2>Example</h2>
+					</div>
+					<nav id="nav" class="6u">
+						<a href="#">Home</a>
+						<a href="#">About Me</a>
+						<a href="#">Blog</a>
+						<a href="#">Contact</a>
+					</nav>
+				</div>
+<div class="2U">
+<h1>Full Width Column</h1>
+    <div class="2u"></div>       <div class="8u"><input type = "button" style ="visibility:hidden"  class   ="homebtn" value = "Calculate2" onclick="funct.checkSelect(mySelect.value, 'ansID', 'inputID')"></div>
+ 
+</div>
+<!-- Sweet nested columns cleared with a clearfix class -->
+<div class="six columns clearfix">
+<!-- In nested columns give the first column a class of alpha
+and the second a class of omega -->
+
+        </div>
+            <section class="4u">
+						Input the number you wish to convert 
+                        <input id="inputID" type="number" value ="0"/>
+						
+					</section>
+            <section class="8u">
+						The converted value is :- 
+                        <input id="ansID" type="text" />
+						
+					</section>
+            <div class="two columns omega">Select the convertion you require</div>
+        
+             <select id="conversion"   name ="optionList" >
+  <option value=""> - Select the Conversion- </option>
+<option value="pk">Pounds to Kilo's</option>
+<option value="kp">Kilo's to Pounds</option>
+<option value="ic">Inche's to Centimeter's</option>
+<option value="ci">Centimeter's to Inche's  </option>
+<option value="mk">Miles to Kilometres</option>
+<option value="km">Kilometres to Miles</option>
+</select>
+</div>
+ 
+<!-- Sweet nested columns cleared by wrapping a .row -->
+<div class="five columns">
+<div class="row">
+
+</div>
+</div>
+ 
+<!-- Sweet nested columns cleared by <br class="clear"> -->
+<div class="five columns">
+
+
+<div class="two columns omega"><code>{int a = 100
+    int b = 200;
+    int c = a*b // the result
+    }
+                               </code>
+      
+
+
+
+</div>
+<br class="clear" />
+</div>
+       <div class="8u"></div>       <div class="4u"><input type = "button" class ="homebtn" value = "CalculateHere" onclick="funct.checkSelect(mySelect.value, 'ansID', 'inputID')"></div>
+         <div class="8u"></div>       <div class="4u"><input type = "button" id ="convertbutton" class ="homebtn" value = "Convert" ></div>
+        <section class="5u">
+</section>
+							<div class="-9u 1u">				
+					
+        
+           <button type="button" name="" value="" class="grad" style ="visibility:hidden" onclick="funct.checkSelect(mySelect.value, 'ansID', 'inputID')" >Re-Calculate</button> 
+<img id="avl" class ="emblem" src ="img/AVL.PNG" />
+                                          
+</div>
+
+<!-- Can push over by columns -->
+<div class="five columns offset-by-one">
+    <!-- The cube to display the engine block -->
+   
+	<div style="height: 300px;margin-top:40px;">
+	<div class="cube-wrap">
+		<div class="cube depth">
+			<div class="front-pane">
+
+              <img  id ="v8front" src ="img\v8leftside.PNG" /> 
+			</div>
+			<div class="back-pane"><img src ="img\v8rightside1.PNG" /></div>
+			<div class="top-pane"><img src ="img\v8mu.PNG" /></div>
+			<div  class="bottom-pane"><img id="btmpnl" src ="img\v8mu.PNG" />
+
+
+			</div>
+			<div class="left-pane"><img src ="img\v8front.PNG" /></div>
+			<div class="right-pane"><img src ="img\v8rear.PNG" /></div>
+		</div>
+	</div>
+	</div>
+    <!-- calls the removepnl function with the panel to remove, the panel to be updated and the image
+     <button type="button" name="pnl" value="Remove" class="grad" onclick="funct.removePnl('v8front','btmpnl','img/v8rear.PNG' )" >Remove Front</button> -->
+    <button type="button" name="pnl" id="pnlRemove" value="Remove" class="grad"  >Remove Panel</button> 
+
+</div>
+ 
+
+			<!-- Footer -->
+				<div id="footer">
+					&copy; Example. All rights reserved &euro;.
+				</div>
+		
+
+        <script src="js/converter.js"> </script>
+        
+	</body>
+</html>
+
